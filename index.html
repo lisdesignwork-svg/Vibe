@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Марк Ворон</title>
+  <title>Mr Robot Volkov</title>
   <style>
     :root {
-      color-scheme: dark;
-      --bg: #0c0d10;
-      --card: #14161c;
-      --text: #e8e6e1;
-      --mute: #9a958c;
-      --line: #2a2d36;
-      --accent: #c8f06a;
+      color-scheme: light;
+      --ink: #1c1917;
+      --mute: #57534e;
+      --paper: #f5f0e8;
+      --card: #fffcf7;
+      --line: #d6cfc4;
+      --accent: #b45309;
     }
 
     * {
@@ -26,59 +26,57 @@
       display: grid;
       place-items: center;
       padding: 1.5rem;
-      font-family: Georgia, "Times New Roman", serif;
-      background:
-        radial-gradient(ellipse 70% 50% at 50% 0%, #1a1e14 0%, var(--bg) 55%);
-      color: var(--text);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
     }
 
     main {
-      width: min(26rem, 100%);
-      padding: 2.4rem 2rem 2rem 2.15rem;
+      width: min(28rem, 100%);
+      padding: 2.25rem 2rem 2rem;
       background: var(--card);
       border: 1px solid var(--line);
-      border-left: 3px solid var(--accent);
+      border-radius: 4px;
+      box-shadow: 8px 8px 0 color-mix(in srgb, var(--ink) 8%, transparent);
     }
 
     p.kicker {
-      font-family: "Segoe UI", system-ui, sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.22em;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     h1 {
-      font-size: clamp(2.1rem, 7vw, 2.7rem);
-      font-weight: 400;
-      letter-spacing: -0.04em;
-      line-height: 1.05;
+      font-size: clamp(1.75rem, 5vw, 2.15rem);
+      font-weight: 650;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
     }
 
     p.about {
-      margin-top: 1rem;
-      font-family: "Segoe UI", system-ui, sans-serif;
+      margin-top: 0.85rem;
       color: var(--mute);
-      font-size: 1rem;
-      line-height: 1.55;
+      font-size: 1.05rem;
+      line-height: 1.45;
     }
 
     ul {
       list-style: none;
-      margin-top: 1.8rem;
-      padding-top: 1.2rem;
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
       border-top: 1px solid var(--line);
       display: flex;
-      flex-direction: column;
-      gap: 0.7rem;
-      font-family: "Segoe UI", system-ui, sans-serif;
+      flex-wrap: wrap;
+      gap: 0.65rem 1.25rem;
     }
 
     a {
-      color: var(--text);
+      color: var(--ink);
       text-decoration: none;
-      width: fit-content;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.05em;
     }
 
     a:hover,
@@ -90,10 +88,10 @@
 <body>
   <main>
     <p class="kicker">визитка</p>
-    <h1>Марк Ворон</h1>
-    <p class="about">Делаю тёмные страницы и короткие тексты. Люблю, когда интерфейс молчит, а смысл остаётся.</p>
+    <h1>Алекс Волков</h1>
+    <p class="about">Верстаю простые страницы и разбираюсь, как устроен веб.</p>
     <ul>
-      <li><a href="mailto:v.3d@gmail.com">почта</a></li>
+      <li><a href="v.3d@gmail.com">почта</a></li>
       <li><a href="https://t.me/volkkkqwert">telegram</a></li>
       <li><a href="https://github.com/qwerybolk">github</a></li>
     </ul>
